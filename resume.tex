@@ -1,0 +1,176 @@
+\documentclass{article}
+
+% this was a mess...see link in folder for details... enables icons
+\usepackage{fontawesome}
+
+% load and tweak geometry very deliberately
+\usepackage[letterpaper]{geometry}
+\geometry{%https://www.sharelatex.com/learn/Page_size_and_margins
+	lmargin=1in, 
+	rmargin=1in, 
+	tmargin=1in, 
+	bmargin=0.4in
+}
+
+% for icons
+\usepackage{graphicx}
+
+% for color
+\usepackage[usenames, dvipsnames]{color}
+%custom colors:  \textcolor{CustomColor1}{RGB}{219, 48, 122}
+
+% avoid row merge issues that would happen in a base TABULAR
+\usepackage{multicol}
+
+% Chinese support - not sure how much is actually needed here... gbsn/bsmi toggles simplified 
+\usepackage{CJKutf8}
+%\usepackage{ucs} 
+%\usepackage[encapsulated]{CJK} 
+%\newcommand{\myfont}{bsmi}
+
+
+\begin{document}
+
+% turn off page numbers
+\pagenumbering{gobble}
+
+% columnar heading for resume
+\begin{multicols}{3}
+	\noindent
+	337 Austin Building\\
+	Statistics Department\\
+	University of Connecticut\\
+	Storrs, CT
+	
+	\columnbreak
+	\noindent
+	\begin{center}
+	\begin{huge}
+	Ellis Shaffer
+	\end{huge}
+	\end{center}
+	
+	\columnbreak
+	~~\faicon{phone} \ +1.917.753.6085\\
+	\indent
+	~~\faicon{envelope-o} \ ellis.shaffer@gmail.com\\
+	\indent
+	~~\faicon{skype} \ ellis.shaffer\\
+	\indent
+	~~\faicon{github} \ e5haffer\\
+	\indent
+	~~\faicon{linkedin-square} \ linkedin.com/in/e5haffer
+
+\end{multicols}
+
+\begin{large}
+\noindent
+  \hspace{-1.0cm}
+  \textbf{\faicon{graduation-cap}~~Education}
+  \vspace{0.1cm}
+\end{large}\\
+\noindent
+\textbf{University of Connecticut \hfill 2016 Expected~~~~~~~~~~~~~~~}\\
+Ph.D. in Statistics: \textit{Binary Time Series and Duration Modeling for Oceanographic Data}\\
+- M.S. degree requirements satisfied December 2013; Professor Nalini Ravishanker advising \vspace{0.1cm} \\
+- Coursework~~
+$\left \{
+\begin{small}
+\begin{tabular}{ l l l}
+Bayesian Statistics & Machine Learning & Probability Theory\\
+Linear Model Theory~~~ & Experimental Design~ & Matrix Analysis
+\\
+\end{tabular}
+\end{small}
+\right \}
+$
+\\
+\\
+\textbf{The City College of New York \hfill 2011 Graduate~~~~~~~~~~~~~~~}\\
+M.A. in Mathematics \vspace{0.1cm} \\ 
+- Coursework~~
+$\left \{
+\begin{small}
+\begin{tabular}{ l l l}
+Real/Complex Analysis & Differential Geometry & Abstract Algebra\\
+Stochastic Processes & Partial Differential Eqns & Toplogy\\
+\end{tabular}
+\end{small}
+\right \}
+$
+\\
+\\
+\textbf{Binghamton University \hfill 2007 Graduate~~~~~~~~~~~~~~~}\\
+B.S. in Business Management; Summa Cum Laude\\
+- Peking University (\begin{CJK*}{UTF8}{gbsn}北京大学\end{CJK*}) semester program in Mandarin Chinese; 3 years study in the US\\
+- Wall Street Journal Award for Student Achievement – national award
+\vspace{0.3cm}
+\hrule
+\vspace{0.3cm}
+\begin{large}
+\noindent
+  \hspace{-0.9cm}
+  \textbf{\faicon{building-o}~~Professional}
+  \vspace{0.1cm}
+\end{large}\\
+\noindent
+\textbf{UConn Statistical Consulting Service \hfill 2015 - Present~~~~~~~~~~~~~~~}\\
+Consultant \hfill Storrs, CT~~~~~~~~~~~~~~~~~~~~~~~~~\\
+- Provided email-based statistical assistance for faculty and grad students, complementing the walk-in office\\
+- Developed and taught short topical courses for faculty and grad students across the university\\
+- Maintained web infrastructure for the Statistical Consulting Service
+\vspace{0.25cm}
+\\
+\textbf{Moody’s Investors Service \hfill 2008 - 2010~~~~~~~~~~~~~~~~~~~}\\
+Senior Associate – Mortgage Backed Securities \hfill New York, NY~~~~~~~~~~~~~~~~~~~~\\
+- Set credit ratings for pools of mortgage loans and associated mortgage-backed bonds\\
+- Predictive modeling for default and prepayment among mortgages and impact on bond cashflows\\
+- Scenario analysis for proposed modification/amendment of portfolios' legal structure\\
+- Ad hoc research of system financial risks and trends in the mortgage industry
+\vspace{0.25cm}
+\\
+\textbf{Deloitte \& Touche LLP  \hfill 2007 - 2008~~~~~~~~~~~~~~~~~~~}\\
+Credit Analyst – Commercial Mortgage Backed Securities \hfill New York, NY~~~~~~~~~~~~~~~~~~~~\\
+- Modeled cash flows for mortgage-backed bonds and other structured products\\
+- Reviewed collateral valuations and legal provisions governing - payout for new bonds\\
+- Audited prospectuses and offering documents to verify disclosure and accuracy of payment mechanics
+\vspace{0.3cm}
+\hrule
+\vspace{0.3cm}
+\begin{large}
+\noindent
+\hspace{-0.9cm}
+  \textbf{\faicon{wrench}~~Technical}
+  \vspace{0.1cm}
+\end{large}\\
+\textbf{Essential Tools for Doctoral Research}\\
+\faicon{terminal}~~~R, SAS, Python, MATLAB\\
+\faicon{cloud-upload}~~~Amazon Web Services – EC2, S3; UConn Beowulf cluster
+\vspace{0.25cm}
+\\
+\textbf{UConn Statistics Department - Duties for Graduate Stipend} \\
+Maintain the ``Merlot" web and file server LAMP stack\\
+Maintain http://stat.uconn.edu for the department (Wordpress/Bootstrap hybrid)\\
+\faicon{linux}~~~Ubuntu/Debian, SSH, Bash scripting, Virtual machine sandbox\\
+\faicon{code}~~~Apache, HTML/CSS, PHP, JavaScript, SQL\\
+\textcolor{white}{
+{\fontsize{0.05cm}{0.05cm}\selectfont
+\hspace{-.5in}
+\begin{tabular}{l}
+\\
+\\
+R Microsoft Excel Microsoft Word git Linux shell commands Bash Python C Java C++ SQL Hadoop Spark Pig Hive Matlab MATLAB mongoDB algorithms
+JavaScript\\
+neural networks stochastic modeling statistics data science big data estimation GLM logistic regression generalized linear models GLMM generalized
+linear mixed models\\
+ANOVA NLP natural language processing PCA principal component analysis statistical learning machine learning SVM support vector
+machines classification SciPy\\
+NumPy Pandas data mining deep learning tree based models binary trees analytics terabyte gigabyte cluster cloud
+AWS MapReduce web internet tech technology PHD\\
+PhD MS GARCH derivatives trading quantitative distributed systems GPU CUDA LASSO options stocks
+equities futures swaps markets credit default model\\
+convex optimization
+\end{tabular}
+}
+}
+\end{document}
